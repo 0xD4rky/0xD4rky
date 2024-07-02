@@ -13,5 +13,5 @@ Experience and Projects:
 
 Reach out to me!
 
-- 🕊️ Twitter : [0xD4rky](https://twitter.com/0xD4rky)
+- 🕊️ Twitter : [darkyboy_](https://twitter.com/darkyboy_)
 - 📬 Email : [ishaan.kumar281@gmail.com](ishaan.kumar281@gmail.com)
