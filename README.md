@@ -1,6 +1,7 @@
 # Hi There! 🙋‍♂️
 
-I am Ishaan Kumar, an UG @ IIT Roorkee. I talk and code for the AI/ML domain. Maths and CV is what I live for.
+I am Ishaan, ug @[iitroorkee](https://www.iitr.ac.in/).
+I try to live in the recurrance of forward and backward passes and make a living out of it.
 
 
 Experience and Projects:
