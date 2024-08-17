@@ -6,6 +6,7 @@ I try to live in the recurrance of forward and backward passes and make a living
 
 Experience and Projects:
 
+- Computer Vision Intern @ [Stylumia](https://www.stylumia.com/)
 - AI Internship @ [GrayMatics](https://www.graymatics.com/)
 - AI Internship @ [Cloud Defense](https://www.clouddefense.ai/)
 - AI Internship @ [RediMinds](https://rediminds.com/)
