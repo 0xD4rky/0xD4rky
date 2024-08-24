@@ -1,25 +1,30 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const sections = ['home', 'projects', 'blogs'];
-    
-    sections.forEach(section => {
-        const btn = document.getElementById(`${section}Btn`);
-        btn.addEventListener('click', () => showSection(section));
-    });
+// Navigation and back button functionality
+const sections = document.querySelectorAll('.section');
+const navLinks = document.querySelectorAll('nav a');
+const backBtn = document.getElementById('backBtn');
 
-    function showSection(sectionId) {
-        sections.forEach(s => {
-            document.getElementById(s).classList.remove('active');
-        });
-        document.getElementById(sectionId).classList.add('active');
+function showSection(sectionId) {
+    sections.forEach(section => section.classList.remove('active'));
+    document.getElementById(sectionId).classList.add('active');
+    
+    if (sectionId !== 'home') {
+        backBtn.style.display = 'block';
+    } else {
+        backBtn.style.display = 'none';
     }
-    
+}
+
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const sectionId = link.getAttribute('href').substring(1);
+        showSection(sectionId);
+    });
 });
 
-const cursor = document.querySelector('.custom-cursor');
-
-// Add event listener to the document to track mouse movement
-document.addEventListener('mousemove', (e) => {
-  // Update the cursor position
-  cursor.style.left = e.clientX + 'px';
-  cursor.style.top = e.clientY + 'px';
+backBtn.addEventListener('click', () => {
+    showSection('home');
 });
+
+// Initialize with home section
+showSection('home');
