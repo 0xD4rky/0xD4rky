@@ -1,74 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishaan's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#blogs">Blogs</a>
-        </nav>
-        
-        <div id="home" class="section active">
-            <h1>Ishaan's page</h1>
-            
-            <p>Heya anon! Myself Ishaan, an aspiring machine learning engineer, currently in my final year of B.Tech from IIT Roorkee. My major interest lies in the mathematics behind algorithms, getting to know in-depth about how networks learn and implement.</p>
-            
-            <p>Physics-based deep learning is what I am currently working on. This field combines my passion for machine learning with fundamental physical principles, allowing for more robust and interpretable models.</p>
-            
-            <p>I really enjoy implementing classical neural network architectures in C++. The challenge of building efficient, low-level implementations helps me understand these models at a deeper level. Additionally, developing tools in C++ catches my interest, as it allows me to create high-performance software for machine learning applications.</p>
-            
-            <div class="social-links">
-                <h3>Connect Here:</h3>
-                <p>GitHub: <a href="https://github.com/0xD4rky" target="_blank">0xD4rky</a><br>
-                Twitter: <a href="https://twitter.com/darkyboy_" target="_blank">darkyboy_</a></p>
-            </div>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>darky.ai</title>
+    <meta name="description" content="Personal portfolio and blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+    <header id="header">
+        <div class="logo-container">
+            <h1><img src="logo.jpeg" alt="darky.ai logo" class="site-logo"> darky.ai </h1>
         </div>
-
-        <div id="experience" class="section">
+        <ul class="main-menu">
+          <li><a href="#home">home</a></li>
+          <li><a href="#experience">experience</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#blog">blog</a></li>
+        </ul>                 
+    </header>
+   
+    <div id="container">
+      <div class="inner">
+        <div id="content"> 
+          
+          <div id="home" class="content-region hide">
+            <div class="home-content">
+              <h2>A Bit About Me</h2>
+              <div class="about-text">
+                <p class="intro">
+                  Hey! I am Ishaan, a final year undergrad at <b href="https://iitr.ac.in" target="_blank">IIT Roorkee</b>.
+                </p>
+                
+                <p class="description">
+                  Generally you would either find me reading/implementing a research paper or chilling around. In the mean time, I am just trying to understand the maths behind the most complex architectures as it gives me a "perspective".
+                </p>
+                
+                <p class="philosophy">
+                  I am an advocate of bottom-up approach while learning and top-down while building.
+                </p>
+              </div>
+              <div class="connect-section">
+                <div class="social-links">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="experience" class="content-region hide">
             <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Computer Vision Intern</h3>
-                <h4>Stylumia</h4>
-                <p>Aug,2024 - Present</p>
+            <div class="grid">
+              <div class="card experience-card">
+                <div class="company-info">
+                <img src="/Users/darky/Documents/0xD4rky/stylumia.png" alt="TechCorp Logo" class="company-logo">
+                  <div>
+                    <h3>Machine Learning Engineer</h3>
+                    <p class="company-name"><a href="https://www.stylumia.ai/" target="_blank">Stylumia.ai</a> ~ Aug 2024 - Nov 2024</p>
+                  </div>
+                </div>
+                <p> Worked on structuring data via Knowledge Distillation, fine-tuning VLMs on structured data and accelerating inference</p>
+              </div>
+              <div class="card experience-card">
+                <div class="company-info">
+                  <img src="/Users/darky/Documents/0xD4rky/gray.png" alt="AI Solutions Logo" class="company-logo">
+                  <div>
+                    <h3>Computer Vision Engineer</h3>
+                    <p class="company-name"><a href="https://www.graymatics.com/" target="_blank">Graymatics</a> ~ May 2024 - July 2024</p>
+                  </div>
+                </div>
+                <p>Developed a video segmentation pipeline using MMSeg for segmention a naval ship while docking, deployed the model to AWS server.</p>
+              </div>
+              <div class="card experience-card">
+                <div class="company-info">
+                  <img src="/Users/darky/Documents/0xD4rky/cdai.png" alt="University Logo" class="company-logo">
+                  <div>
+                    <h3>MLOps Intern</h3>
+                    <p class="company-name"><a href="https://www.clouddefense.ai/about/" target="_blank">CloudDefense.ai</a> ~ Dec 2023 - March 2024</p>
+                  </div>
+                </div>
+                <p>Worked on developing workload scanning approaches for scanning PII data from databases. Deployed DSPM product to scale: <a href="https://www.clouddefense.ai/what-is-dspm/" target="_blank">DSPM</a></p>
+              </div>
             </div>
-            <div class="experience-item">
-                <h3>Artificial Intelligence Intern</h3>
-                <h4>Graymatics</h4>
-                <p>May,2024 - June,2024</p>
-            </div>
-            <div class="experience-item">
-                <h3>AI Backend Intern</h3>
-                <h4>Cloud Defense.ai</h4>
-                <p>November,2023 - February,2024</p>
-            </div>
-            <div class="experience-item">
-                <h3>Data Science Intern</h3>
-                <h4>Unisource</h4>
-                <p>May,2023 -  August,2023</p>
-            </div>
-        </div>
-
-        <div id="projects" class="section">
+          </div>
+          
+          <div id="projects" class="content-region hide">
             <h2>Projects</h2>
-            <!-- Add your projects here -->
-            <p>Your projects will be listed here.</p>
+            <div class="grid">
+              <div class="card">
+                <img src="/Users/darky/Documents/0xD4rky/vivit.png" alt="Project 1">
+                <h3>HAR</h3>
+                <p>Building acitivity recognizer ViViT's spatio-temporal attention to understand stacked frames and flows!</p>
+                <a href="https://github.com/0xD4rky/HAR" target="_blank">View Project → <i class="fab fa-github"></i></a>
+              </div>
+              <div class="card">
+                <img src="/Users/darky/Documents/0xD4rky/vlm.png" alt="Project 2">
+                <h3>Accelerating VLMs</h3>
+                <p>A project where I am building: 
+                  <br \> a. paligemma from scratch
+                  <br \> b. fine tuning scripts of multiple vlms (exploring quantization, peft, etc.) 
+                  <br \> c. accelerating inference smol and large VLMs, resolve biases</p>
+                <a href="https://github.com/0xD4rky/VLLMs" target="_blank">View Project → <i class="fab fa-github"></i></a>
+              </div>
+              <div class="card">
+                <img src="/Users/darky/Documents/0xD4rky/deepfake.jpg" alt="Project 3">
+                <h3>DeepFakes</h3>
+                <p>Trying to explore the VLM's capabilities to detect ai-generated images. Previously implemented concepts:
+                  <br \> - Efficient Net B4
+                  <br \> - XceptionNet
+                  <br \> - ViT
+                </p>
+                <a href="https://openreview.net/pdf?id=cP2W2PJtBj" target="_blank">Follow the paper → <i class="fab fa-book"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div id="blog" class="content-region hide">
+            <h2>Blog</h2>
+            <div class="grid">
+              <div class="card">
+                <img src="/api/placeholder/400/320" alt="Blog 1">
+                <h3>The Future of AI</h3>
+                <p>Exploring upcoming trends in artificial intelligence.</p>
+                <a href="#" target="_blank">Read More →</a>
+              </div>
+              <div class="card">
+                <img src="/api/placeholder/400/320" alt="Blog 2">
+                <h3>Deep Learning Tips</h3>
+                <p>Best practices for training neural networks.</p>
+                <a href="#" target="_blank">Read More →</a>
+              </div>
+              <div class="card">
+                <img src="/api/placeholder/400/320" alt="Blog 3">
+                <h3>AI Ethics</h3>
+                <p>Discussing ethical considerations in AI development.</p>
+                <a href="#" target="_blank">Read More →</a>
+              </div>
+            </div>
+          </div>
+          
         </div>
-
-        <div id="blogs" class="section">
-            <h2>Blogs</h2>
-            <!-- Add your blogs here -->
-            <p>Your blog posts will be listed here.</p>
-        </div>
-
-        <button id="backBtn" class="back-button">Back</button>
     </div>
-    <script src="script.js"></script>
+  </div>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://twitter.com/darkyboy_" target="_blank" class="social-link">
+        <i class="fab fa-twitter"></i>
+        <span>Twitter</span>
+      </a>
+      <a href="https://github.com/0xD4rky" target="_blank" class="social-link">
+        <i class="fab fa-github"></i>
+        <span>GitHub</span>
+      </a>
+    </div>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,30 +1,21 @@
-// Navigation and back button functionality
-const sections = document.querySelectorAll('.section');
-const navLinks = document.querySelectorAll('nav a');
-const backBtn = document.getElementById('backBtn');
-
-function showSection(sectionId) {
-    sections.forEach(section => section.classList.remove('active'));
-    document.getElementById(sectionId).classList.add('active');
-    
-    if (sectionId !== 'home') {
-        backBtn.style.display = 'block';
-    } else {
-        backBtn.style.display = 'none';
-    }
-}
-
-navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const sectionId = link.getAttribute('href').substring(1);
-        showSection(sectionId);
+// Wait for the document to load before running the script 
+(function ($) {
+    // Handle page navigation and content display
+    $(window).on('load hashchange', function(){
+      // Hide all content regions
+      $('.content-region').hide();
+      
+      // Remove active class from all menu items
+      $('.main-menu a').removeClass('active');
+      
+      // Get the current hash or default to home
+      var region = location.hash.toString() || $('.main-menu a:first').attr('href');
+      
+      // Show the selected region
+      $(region).show();
+      
+      // Add active class to current menu item
+      $('.main-menu a[href="'+ region +'"]').addClass('active');
     });
-});
-
-backBtn.addEventListener('click', () => {
-    showSection('home');
-});
-
-// Initialize with home section
-showSection('home');
+    
+  })(jQuery);
