@@ -61,7 +61,7 @@ p:hover {
 a { 
     font-weight: normal; 
     text-decoration: none; 
-    color: white;
+    color: #EF6D3D;
     
 }
 b { 
@@ -179,7 +179,7 @@ ul.main-menu li a.active {
 
 .social-link:hover {
     transform: translateY(-2px);
-    color: #ff9776; /* Slightly lighter shade for click feedback */
+    color: white; /* Slightly lighter shade for click feedback */
     transition: all 0.1s ease;
 }
 
