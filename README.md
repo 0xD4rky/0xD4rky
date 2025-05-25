@@ -1,19 +1,19 @@
 # Hi There! 🙋‍♂️
 
 I am Ishaan, ug @[iitroorkee](https://www.iitr.ac.in/).
-I try to live in the recurrance of forward and backward passes and make a living out of it.
+I am working towards learning RL, Post-training SLMs and proceeding towards Inference Optimization!
 
 
 Experience and Projects:
 
+- Machine Learning Intern @ [Sarvam AI](https://www.sarvam.ai/)
 - Computer Vision Intern @ [Stylumia](https://www.stylumia.com/)
 - AI Internship @ [GrayMatics](https://www.graymatics.com/)
 - AI Internship @ [Cloud Defense](https://www.clouddefense.ai/)
 - AI Internship @ [RediMinds](https://rediminds.com/)
-- Data Science Internship @ [Unisource](https://www.uesaz.com/)
 
 
 Reach out to me!
 
-- 🕊️ Twitter : [darkyboy_](https://twitter.com/darkyboy_)
+- 🕊️ Twitter : [darkyboy_](https://twitter.com/auto_grad_)
 - 📬 Email : [ishaan.kumar281@gmail.com](ishaan.kumar281@gmail.com)
