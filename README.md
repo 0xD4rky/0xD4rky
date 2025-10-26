@@ -1,5 +1,5 @@
-# hey
+# hey there!
 
-i am ishaan, and im working towards learning RL, Post-training SLMs and proceeding towards Inference Optimizations
+i am ishaan, working towards post-training LLMs, learning RL and wasting FLOPs
 
 
